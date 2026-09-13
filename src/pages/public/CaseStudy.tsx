@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -14,7 +15,7 @@ export default function CaseStudy() {
   };
 
   useEffect(() => {
-    fetch('/api/portfolio')
+    apiFetch('/api/portfolio')
       .then(res => res.json())
       .then(data => {
         const found = data.find((p: any) => p.slug === slug);

@@ -1,0 +1,125 @@
+{
+  "entities": {
+    "Service": {
+      "title": "Service",
+      "description": "A service offered in the portfolio",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "icon": { "type": "string" },
+        "display_order": { "type": "number" },
+        "active": { "type": "number" },
+        "created_at": { "type": "string" }
+      }
+    },
+    "PortfolioProject": {
+      "title": "Portfolio Project",
+      "description": "A case study or project",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "slug": { "type": "string" },
+        "category": { "type": "string" },
+        "description": { "type": "string" },
+        "thumbnail": { "type": "string" },
+        "image": { "type": "string" },
+        "before_image": { "type": "string" },
+        "after_image": { "type": "string" },
+        "seo_image": { "type": "string" },
+        "custom_sections": { "type": "string" },
+        "published": { "type": "number" },
+        "display_order": { "type": "number" },
+        "created_at": { "type": "string" }
+      }
+    },
+    "Testimonial": {
+      "title": "Testimonial",
+      "description": "Client feedback",
+      "type": "object",
+      "properties": {
+        "client_name": { "type": "string" },
+        "company": { "type": "string" },
+        "feedback": { "type": "string" },
+        "photo": { "type": "string" },
+        "rating": { "type": "number" },
+        "display_order": { "type": "number" },
+        "active": { "type": "number" },
+        "created_at": { "type": "string" }
+      }
+    },
+    "Lead": {
+      "title": "Lead",
+      "description": "Contact form submission",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "message": { "type": "string" },
+        "budget": { "type": "string" },
+        "status": { "type": "string" },
+        "created_at": { "type": "string" }
+      }
+    },
+    "Setting": {
+      "title": "Setting",
+      "description": "Global settings key-value pair",
+      "type": "object",
+      "properties": {
+        "key": { "type": "string" },
+        "value": { "type": "string" }
+      }
+    },
+    "Faq": {
+      "title": "FAQ",
+      "description": "Frequently Asked Question",
+      "type": "object",
+      "properties": {
+        "question": { "type": "string" },
+        "answer": { "type": "string" },
+        "display_order": { "type": "number" },
+        "active": { "type": "number" },
+        "created_at": { "type": "string" }
+      }
+    },
+    "AdminUser": {
+      "title": "Admin User",
+      "description": "Authorized admin emails or UIDs",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "created_at": { "type": "string" }
+      }
+    }
+  },
+  "firestore": {
+    "services": {
+      "schema": { "$ref": "#/entities/Service" },
+      "description": "List of services"
+    },
+    "portfolio": {
+      "schema": { "$ref": "#/entities/PortfolioProject" },
+      "description": "Portfolio projects and case studies"
+    },
+    "testimonials": {
+      "schema": { "$ref": "#/entities/Testimonial" },
+      "description": "Client testimonials"
+    },
+    "leads": {
+      "schema": { "$ref": "#/entities/Lead" },
+      "description": "Contact inquiries"
+    },
+    "settings": {
+      "schema": { "$ref": "#/entities/Setting" },
+      "description": "Site configurations"
+    },
+    "faqs": {
+      "schema": { "$ref": "#/entities/Faq" },
+      "description": "Frequently asked questions"
+    },
+    "admins": {
+      "schema": { "$ref": "#/entities/AdminUser" },
+      "description": "List of admin users"
+    }
+  }
+}

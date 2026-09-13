@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { Outlet, Link, useNavigate, useLocation } from 'react-router-dom';
 import { LayoutDashboard, Briefcase, Folders, MessageSquare, Users, Settings, LogOut, HelpCircle } from 'lucide-react';
 import { useEffect, useState } from 'react';
@@ -8,7 +9,7 @@ export default function AdminLayout() {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
 
   useEffect(() => {
-    fetch('/api/auth/me')
+    apiFetch('/api/auth/me')
       .then(res => res.json())
       .then(data => {
         if (data.authenticated) {
@@ -21,7 +22,7 @@ export default function AdminLayout() {
   }, [navigate]);
 
   const handleLogout = async () => {
-    await fetch('/api/auth/logout', { method: 'POST' });
+    await apiFetch('/api/auth/logout', { method: 'POST' });
     navigate('/admin/login');
   };
 

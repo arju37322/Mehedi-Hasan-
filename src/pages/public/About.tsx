@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { useEffect, useState } from 'react';
 import { Target, BarChart, Settings, Mail, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -7,7 +8,7 @@ export default function About() {
   const [settings, setSettings] = useState<Record<string, string>>({});
 
   useEffect(() => {
-    fetch('/api/settings').then(res => res.json()).then(setSettings);
+    apiFetch('/api/settings').then(res => res.json()).then(setSettings);
   }, []);
 
   return (

@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import React, { useRef, useState } from 'react';
 import { Button } from './Button';
 import { Upload, X, Loader2, Image as ImageIcon } from 'lucide-react';
@@ -20,7 +21,7 @@ export function ImageUpload({ value, onChange }: ImageUploadProps) {
     formData.append('image', file);
 
     try {
-      const res = await fetch('/api/upload', {
+      const res = await apiFetch('/api/upload', {
         method: 'POST',
         body: formData,
         credentials: 'include',

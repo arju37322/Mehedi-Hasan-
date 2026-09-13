@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/src/components/ui/Button';
 import { Input } from '@/src/components/ui/Input';
@@ -10,7 +11,7 @@ export default function AdminServices() {
   const [isEditing, setIsEditing] = useState(false);
   const [currentService, setCurrentService] = useState<any>({});
 
-  const fetchServices = () => fetch('/api/services').then(res => res.json()).then(data => { if(Array.isArray(data)) setServices(data); }).catch(console.error);
+  const fetchServices = () => apiFetch('/api/services').then(res => res.json()).then(data => { if(Array.isArray(data)) setServices(data); }).catch(console.error);
 
   useEffect(() => {
     fetchServices();
@@ -21,7 +22,7 @@ export default function AdminServices() {
     const method = currentService.id ? 'PUT' : 'POST';
     const url = currentService.id ? `/api/admin/services/${currentService.id}` : '/api/admin/services';
     
-    await fetch(url, {
+    await apiFetch(url, {
       method,
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(currentService)
@@ -34,7 +35,7 @@ export default function AdminServices() {
 
   const handleDelete = async (id: number) => {
     
-    await fetch(`/api/admin/services/${id}`, { method: 'DELETE' });
+    await apiFetch(`/api/admin/services/${id}`, { method: 'DELETE' });
     fetchServices();
   };
 

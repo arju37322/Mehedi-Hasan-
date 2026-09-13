@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { useEffect, useState } from 'react';
 import { MessageSquareQuote } from 'lucide-react';
 
@@ -5,7 +6,7 @@ export default function ClientFeedback() {
   const [testimonials, setTestimonials] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch('/api/testimonials')
+    apiFetch('/api/testimonials')
       .then(res => res.json())
       .then(setTestimonials)
       .catch(console.error);

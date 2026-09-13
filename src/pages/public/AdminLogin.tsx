@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/src/components/ui/Button';
-import { Input } from '@/src/components/ui/Input';
 import { Lock } from 'lucide-react';
+import { auth, googleProvider } from '../../lib/firebase';
+import { signInWithPopup } from 'firebase/auth';
 
 export default function AdminLogin() {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
@@ -17,20 +16,10 @@ export default function AdminLogin() {
     setLoading(true);
 
     try {
-      const res = await fetch('/api/auth/login', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ username, password })
-      });
-      const data = await res.json();
-      
-      if (res.ok && data.success) {
-        navigate('/admin/dashboard');
-      } else {
-        setError(data.error || 'Login failed');
-      }
-    } catch (err) {
-      setError('An error occurred. Please try again.');
+      await signInWithPopup(auth, googleProvider);
+      navigate('/admin/dashboard');
+    } catch (err: any) {
+      setError(err.message || 'Login failed');
     } finally {
       setLoading(false);
     }
@@ -45,7 +34,7 @@ export default function AdminLogin() {
           </div>
         </div>
         <h1 className="text-2xl font-bold text-center text-slate-900 mb-2">Admin Login</h1>
-        <p className="text-center text-slate-500 text-sm mb-8">Sign in to manage your portfolio</p>
+        <p className="text-center text-slate-500 text-sm mb-8">Sign in with Google to manage your portfolio</p>
         
         {error && (
           <div className="mb-4 p-3 bg-red-50 text-red-700 rounded-lg text-sm">
@@ -53,29 +42,11 @@ export default function AdminLogin() {
           </div>
         )}
 
-        <form onSubmit={handleLogin} className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium text-slate-700 mb-1">Username</label>
-            <Input 
-              type="text" 
-              value={username} 
-              onChange={(e) => setUsername(e.target.value)} 
-              required
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-slate-700 mb-1">Password</label>
-            <Input 
-              type="password" 
-              value={password} 
-              onChange={(e) => setPassword(e.target.value)} 
-              required
-            />
-          </div>
-          <Button type="submit" className="w-full" disabled={loading}>
-            {loading ? 'Signing in...' : 'Sign In'}
+        <div className="space-y-4">
+          <Button onClick={handleLogin} className="w-full" disabled={loading}>
+            {loading ? 'Signing in...' : 'Sign In with Google'}
           </Button>
-        </form>
+        </div>
       </div>
     </div>
   );

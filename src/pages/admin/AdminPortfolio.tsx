@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/src/components/ui/Button';
 import { Input } from '@/src/components/ui/Input';
@@ -44,7 +45,7 @@ export default function AdminPortfolio() {
     try { return JSON.parse(str); } catch (e) { return []; }
   };
 
-  const fetchPortfolio = () => fetch('/api/admin/portfolio').then(res => res.json()).then(data => {
+  const fetchPortfolio = () => apiFetch('/api/admin/portfolio').then(res => res.json()).then(data => {
     if(Array.isArray(data)) {
       const parsedData = data.map(d => ({
         ...d,
@@ -66,7 +67,7 @@ export default function AdminPortfolio() {
     const method = currentProject.id ? 'PUT' : 'POST';
     const url = currentProject.id ? `/api/admin/portfolio/${currentProject.id}` : '/api/admin/portfolio';
     
-    await fetch(url, {
+    await apiFetch(url, {
       method,
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(currentProject)
@@ -79,7 +80,7 @@ export default function AdminPortfolio() {
 
   const handleDelete = async (id: number) => {
     
-    await fetch(`/api/admin/portfolio/${id}`, { method: 'DELETE' });
+    await apiFetch(`/api/admin/portfolio/${id}`, { method: 'DELETE' });
     fetchPortfolio();
   };
 

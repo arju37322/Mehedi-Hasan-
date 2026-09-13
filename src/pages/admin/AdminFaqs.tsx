@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/src/components/ui/Button';
 import { Input } from '@/src/components/ui/Input';
@@ -9,7 +10,7 @@ export default function AdminFaqs() {
   const [isEditing, setIsEditing] = useState(false);
   const [currentFaq, setCurrentFaq] = useState<any>({});
 
-  const fetchFaqs = () => fetch('/api/admin/faqs').then(res => res.json()).then(data => { if(Array.isArray(data)) setFaqs(data); }).catch(console.error);
+  const fetchFaqs = () => apiFetch('/api/admin/faqs').then(res => res.json()).then(data => { if(Array.isArray(data)) setFaqs(data); }).catch(console.error);
 
   useEffect(() => {
     fetchFaqs();
@@ -20,7 +21,7 @@ export default function AdminFaqs() {
     const method = currentFaq.id ? 'PUT' : 'POST';
     const url = currentFaq.id ? `/api/admin/faqs/${currentFaq.id}` : '/api/admin/faqs';
     
-    await fetch(url, {
+    await apiFetch(url, {
       method,
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(currentFaq)
@@ -33,7 +34,7 @@ export default function AdminFaqs() {
 
   const handleDelete = async (id: number) => {
     
-    await fetch(`/api/admin/faqs/${id}`, { method: 'DELETE' });
+    await apiFetch(`/api/admin/faqs/${id}`, { method: 'DELETE' });
     fetchFaqs();
   };
 

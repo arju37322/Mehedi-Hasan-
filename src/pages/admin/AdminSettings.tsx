@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { useEffect, useState } from 'react';
 import { Button } from '@/src/components/ui/Button';
 import { Input } from '@/src/components/ui/Input';
@@ -11,7 +12,7 @@ export default function AdminSettings() {
   const [success, setSuccess] = useState(false);
 
   useEffect(() => {
-    fetch('/api/settings')
+    apiFetch('/api/settings')
       .then(res => res.json())
       .then(setSettings);
   }, []);
@@ -24,7 +25,7 @@ export default function AdminSettings() {
     setLoading(true);
     setSuccess(false);
     try {
-      await fetch('/api/admin/settings', {
+      await apiFetch('/api/admin/settings', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(settings)

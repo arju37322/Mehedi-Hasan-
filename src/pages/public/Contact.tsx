@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/src/components/ui/Button';
 import { Input } from '@/src/components/ui/Input';
@@ -14,7 +15,7 @@ export default function Contact() {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    fetch('/api/settings').then(res => res.json()).then(setSettings).catch(console.error);
+    apiFetch('/api/settings').then(res => res.json()).then(setSettings).catch(console.error);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -23,7 +24,7 @@ export default function Contact() {
     setError('');
     
     try {
-      const res = await fetch('/api/leads', {
+      const res = await apiFetch('/api/leads', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)

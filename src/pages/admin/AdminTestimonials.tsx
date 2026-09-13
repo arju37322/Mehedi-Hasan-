@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import React, { useEffect, useState } from 'react';
 import { Button } from '@/src/components/ui/Button';
 import { Input } from '@/src/components/ui/Input';
@@ -10,7 +11,7 @@ export default function AdminTestimonials() {
   const [isEditing, setIsEditing] = useState(false);
   const [currentTestimonial, setCurrentTestimonial] = useState<any>({});
 
-  const fetchTestimonials = () => fetch('/api/admin/testimonials').then(res => res.json()).then(data => { if(Array.isArray(data)) setTestimonials(data); }).catch(console.error);
+  const fetchTestimonials = () => apiFetch('/api/admin/testimonials').then(res => res.json()).then(data => { if(Array.isArray(data)) setTestimonials(data); }).catch(console.error);
 
   useEffect(() => {
     fetchTestimonials();
@@ -21,7 +22,7 @@ export default function AdminTestimonials() {
     const method = currentTestimonial.id ? 'PUT' : 'POST';
     const url = currentTestimonial.id ? `/api/admin/testimonials/${currentTestimonial.id}` : '/api/admin/testimonials';
     
-    await fetch(url, {
+    await apiFetch(url, {
       method,
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(currentTestimonial)
@@ -34,7 +35,7 @@ export default function AdminTestimonials() {
 
   const handleDelete = async (id: number) => {
     
-    await fetch(`/api/admin/testimonials/${id}`, { method: 'DELETE' });
+    await apiFetch(`/api/admin/testimonials/${id}`, { method: 'DELETE' });
     fetchTestimonials();
   };
 

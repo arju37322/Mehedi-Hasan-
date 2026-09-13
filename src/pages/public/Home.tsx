@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, BarChart3, Target, ShieldCheck, Zap, Star, TrendingUp, MousePointerClick, Activity, ChevronDown } from 'lucide-react';
@@ -12,10 +13,10 @@ export default function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   useEffect(() => {
-    fetch('/api/settings').then(res => res.json()).then(setSettings);
-    fetch('/api/services').then(res => res.json()).then(data => setServices(data.slice(0, 4)));
-    fetch('/api/testimonials').then(res => res.json()).then(data => setTestimonials(data.slice(0, 3)));
-    fetch('/api/faqs').then(res => res.json()).then(setFaqs);
+    apiFetch('/api/settings').then(res => res.json()).then(setSettings);
+    apiFetch('/api/services').then(res => res.json()).then(data => setServices(data.slice(0, 4)));
+    apiFetch('/api/testimonials').then(res => res.json()).then(data => setTestimonials(data.slice(0, 3)));
+    apiFetch('/api/faqs').then(res => res.json()).then(setFaqs);
   }, []);
 
   return (

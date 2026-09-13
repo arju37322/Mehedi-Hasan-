@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
@@ -10,7 +11,7 @@ export default function PublicLayout() {
   const location = useLocation();
 
   useEffect(() => {
-    fetch('/api/settings')
+    apiFetch('/api/settings')
       .then(res => res.json())
       .then(setSettings)
       .catch(console.error);

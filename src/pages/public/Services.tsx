@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { useEffect, useState } from 'react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -6,7 +7,7 @@ export default function Services() {
   const [services, setServices] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch('/api/services').then(res => res.json()).then(setServices);
+    apiFetch('/api/services').then(res => res.json()).then(setServices);
   }, []);
 
   return (

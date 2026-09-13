@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { useEffect, useState } from 'react';
 import { ExternalLink, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -6,7 +7,7 @@ export default function Portfolio() {
   const [projects, setProjects] = useState<any[]>([]);
 
   useEffect(() => {
-    fetch('/api/portfolio').then(res => res.json()).then(setProjects);
+    apiFetch('/api/portfolio').then(res => res.json()).then(setProjects);
   }, []);
 
   return (

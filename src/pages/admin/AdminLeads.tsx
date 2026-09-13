@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { useEffect, useState } from 'react';
 import { Mail, Phone, Globe, Building, DollarSign, Trash2 } from 'lucide-react';
 import { Button } from '@/src/components/ui/Button';
@@ -23,7 +24,7 @@ export default function AdminLeads() {
 
   const fetchLeads = async () => {
     setLoading(true);
-    const res = await fetch('/api/admin/leads');
+    const res = await apiFetch('/api/admin/leads');
     const data = await res.json();
     setLeads(data);
     setLoading(false);
@@ -34,7 +35,7 @@ export default function AdminLeads() {
   }, []);
 
   const updateStatus = async (id: number, status: string) => {
-    await fetch(`/api/admin/leads/${id}`, {
+    await apiFetch(`/api/admin/leads/${id}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ status })
@@ -47,7 +48,7 @@ export default function AdminLeads() {
 
   const deleteLead = async (id: number) => {
     
-    await fetch(`/api/admin/leads/${id}`, { method: 'DELETE' });
+    await apiFetch(`/api/admin/leads/${id}`, { method: 'DELETE' });
     fetchLeads();
     if (selectedLead && selectedLead.id === id) {
       setSelectedLead(null);

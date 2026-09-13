@@ -1,3 +1,4 @@
+import { apiFetch } from '../../lib/api';
 import { useEffect, useState } from 'react';
 import { Users, Briefcase, Folders, MessageSquare, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -18,7 +19,7 @@ export default function AdminDashboard() {
   const [data, setData] = useState<DashboardData | null>(null);
 
   useEffect(() => {
-    fetch('/api/admin/dashboard')
+    apiFetch('/api/admin/dashboard')
       .then(res => res.json())
       .then(setData);
   }, []);
