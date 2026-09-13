@@ -1,0 +1,633 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "MehediHasan",
+      "password_hash": "$2b$10$JZQXFPTWm0kXZHbv8RPN.uRrG2HWezBc1dVuK4j3xyv889zU0qhw2",
+      "created_at": "2026-09-12T09:32:29.176Z"
+    }
+  ],
+  "services": [
+    {
+      "id": 1789205549987,
+      "title": "Meta Ads Management",
+      "slug": "meta-ads-management",
+      "icon": "Target",
+      "short_description": "Campaign strategy, setup, optimization and scaling.",
+      "benefits": "Full-funnel strategy, audience targeting, creative testing, ROAS optimization.",
+      "featured": 1,
+      "display_order": 1,
+      "active": 1,
+      "created_at": "2026-09-12T09:32:29.177Z"
+    },
+    {
+      "id": 1789205550110,
+      "title": "Conversion Tracking",
+      "slug": "conversion-tracking",
+      "icon": "Activity",
+      "short_description": "Accurate event tracking and conversion measurement.",
+      "benefits": "Pixel setup, standard/custom events, deduplication, accurate data.",
+      "featured": 1,
+      "display_order": 2,
+      "active": 1,
+      "created_at": "2026-09-12T09:32:29.177Z"
+    },
+    {
+      "id": 1789205549658,
+      "title": "Conversion API (CAPI)",
+      "slug": "conversion-api",
+      "icon": "Server",
+      "short_description": "Server-side tracking implementation to improve data quality.",
+      "benefits": "Bypass ad blockers, improve attribution, higher match rates.",
+      "featured": 1,
+      "display_order": 3,
+      "active": 1,
+      "created_at": "2026-09-12T09:32:29.177Z"
+    },
+    {
+      "id": 1789205550126,
+      "title": "Retargeting Campaigns",
+      "slug": "retargeting",
+      "icon": "Repeat",
+      "short_description": "Re-engage high-intent website visitors and potential customers.",
+      "benefits": "Lower CPA, higher conversion rates, dynamic product ads.",
+      "featured": 0,
+      "display_order": 4,
+      "active": 1,
+      "created_at": "2026-09-12T09:32:29.177Z"
+    }
+  ],
+  "portfolio": [
+    {
+      "id": 1789207277773,
+      "created_at": "2026-09-12T10:01:17.066Z",
+      "title": "YouTube Channel Optimization & SEO",
+      "slug": "youtube-channel-optimization-&-seo",
+      "client": "MR Garments Accessories",
+      "thumbnail": "/assets/my-pic-website.png",
+      "image": "/assets/my-pic-website.png",
+      "description": "Improving the structure, branding, discoverability, and overall presentation of a business YouTube channel.",
+      "metrics": "Services Provided YouTube Channel Optimization · Channel SEO · Video Optimization · Branding Optimizatio",
+      "featured": 0,
+      "published": 1,
+      "objective": "tghfhgdsgsdfghtr",
+      "scope_of_work": "[{\"title\":\"dfgdfhsfdhsd\",\"description\":\"sgdsfhdsfhsdfh\"}]",
+      "before_image": "/assets/my-pic-website.png",
+      "before_text": "dfghdsfh",
+      "seo_image": "/assets/my-pic-website.png",
+      "seo_text": "dshsdfhsdfhsdghfsgrs",
+      "after_image": "/assets/my-pic-website.png",
+      "after_text": "dsfghsdfhgdfhgasd",
+      "approach": "[{\"title\":\"asdgasdg\",\"description\":\"sadgsagas\"}]",
+      "why_work_with_me": "[{\"title\":\"sagsag\",\"description\":\"sadgsdagsadg\"}]",
+      "custom_sections": "[{\"title\":\"Before Optimization\",\"text\":\"dfghdsfh\",\"image\":\"/assets/my-pic-website.png\"},{\"title\":\"SEO & Optimization Work\",\"text\":\"dshsdfhsdfhsdghfsgrs\",\"image\":\"/assets/my-pic-website.png\"},{\"title\":\"After Optimization\",\"text\":\"dsfghsdfhgdfhgasd\",\"image\":\"/assets/my-pic-website.png\"}]"
+    },
+    {
+      "id": 1789209349701,
+      "created_at": "2026-09-12T10:35:49.286Z",
+      "title": "aaaaaaaaaaaaaaaaaaaaaaa",
+      "slug": "aaaaaaaaaaaaaaaaaaaaaaa",
+      "client": "ssssssssssssss",
+      "category": "rrrrrrrrrrrrrrrrrr",
+      "thumbnail": "/assets/my-pic-website.png",
+      "image": "/assets/my-pic-website.png",
+      "subtitle": "bbbbbbbbbbbbbb",
+      "industry": "ccccccccccccccccc",
+      "objective": "ssssssiiiiiiiiiiiiiiiiiiiiiiiuuuuuuuuuuuutyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+      "scope_of_work": "[{\"title\":\"dfgdfghthfghdfgh\",\"description\":\"dfhtyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\"}]",
+      "custom_sections": "[{\"title\":\"Arju\",\"text\":\"wwwwwwwwwwwwwwwwww\",\"image\":\"/assets/my-pic-website.png\"},{\"title\":\"0000000000000000000000\",\"text\":\"000000003333333333333333333333333333333333\",\"image\":\"/assets/my-pic-website.png\"}]",
+      "approach": "[{\"title\":\"00000000000000000000\",\"description\":\"009999999999999999999999999999\"}]",
+      "why_work_with_me": "[{\"title\":\"66666666666666666666\",\"description\":\"66555555555555555555555555555555\"}]",
+      "featured": 0,
+      "published": 1
+    }
+  ],
+  "testimonials": [],
+  "leads": [],
+  "settings": [
+    {
+      "key": "hero_headline",
+      "value": "Turn Ad Spend Into Measurable Business Growth"
+    },
+    {
+      "key": "hero_description",
+      "value": "I help businesses grow with high-performance Meta Ads, accurate conversion tracking, retargeting and data-driven optimization."
+    },
+    {
+      "key": "about_text",
+      "value": "I am a data-driven Digital Marketer specializing in Meta Ads, Conversion Tracking, and creating scalable advertising strategies."
+    },
+    {
+      "key": "contact_email",
+      "value": "hello@mehedihasan.com"
+    },
+    {
+      "key": "contact_phone",
+      "value": "+1234567890"
+    },
+    {
+      "key": "linkedin_url",
+      "value": "#"
+    },
+    {
+      "key": "facebook_url",
+      "value": "#"
+    },
+    {
+      "key": "instagram_url",
+      "value": "#"
+    },
+    {
+      "key": "youtube_url",
+      "value": "#"
+    },
+    {
+      "key": "whatsapp_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205635922,
+      "created_at": "2026-09-12T09:33:55.658Z",
+      "key": "hero_headline",
+      "value": "Turn Ad Spend Into Measurable Business Growth"
+    },
+    {
+      "id": 1789205636146,
+      "created_at": "2026-09-12T09:33:55.661Z",
+      "key": "hero_description",
+      "value": "I help businesses grow with high-performance Meta Ads, accurate conversion tracking, retargeting and data-driven optimization."
+    },
+    {
+      "id": 1789205636075,
+      "created_at": "2026-09-12T09:33:55.662Z",
+      "key": "about_text",
+      "value": "I am a data-driven Digital Marketer specializing in Meta Ads, Conversion Tracking, and creating scalable advertising strategies."
+    },
+    {
+      "id": 1789205636640,
+      "created_at": "2026-09-12T09:33:55.663Z",
+      "key": "contact_email",
+      "value": "hello@mehedihasan.com"
+    },
+    {
+      "id": 1789205636436,
+      "created_at": "2026-09-12T09:33:55.663Z",
+      "key": "contact_phone",
+      "value": "+1234567890"
+    },
+    {
+      "id": 1789205636137,
+      "created_at": "2026-09-12T09:33:55.664Z",
+      "key": "linkedin_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205635911,
+      "created_at": "2026-09-12T09:33:55.664Z",
+      "key": "facebook_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205636166,
+      "created_at": "2026-09-12T09:33:55.665Z",
+      "key": "instagram_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205635784,
+      "created_at": "2026-09-12T09:33:55.665Z",
+      "key": "youtube_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205635830,
+      "created_at": "2026-09-12T09:33:55.665Z",
+      "key": "whatsapp_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205636010,
+      "created_at": "2026-09-12T09:33:55.666Z",
+      "key": "site_logo",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789205683437,
+      "created_at": "2026-09-12T09:34:42.601Z",
+      "key": "hero_headline",
+      "value": "Turn Ad Spend Into Measurable Business Growth"
+    },
+    {
+      "id": 1789205683490,
+      "created_at": "2026-09-12T09:34:42.602Z",
+      "key": "hero_description",
+      "value": "I help businesses grow with high-performance Meta Ads, accurate conversion tracking, retargeting and data-driven optimization."
+    },
+    {
+      "id": 1789205683468,
+      "created_at": "2026-09-12T09:34:42.602Z",
+      "key": "about_text",
+      "value": "I am a data-driven Digital Marketer specializing in Meta Ads, Conversion Tracking, and creating scalable advertising strategies."
+    },
+    {
+      "id": 1789205683332,
+      "created_at": "2026-09-12T09:34:42.602Z",
+      "key": "contact_email",
+      "value": "hello@mehedihasan.com"
+    },
+    {
+      "id": 1789205682673,
+      "created_at": "2026-09-12T09:34:42.603Z",
+      "key": "contact_phone",
+      "value": "+1234567890"
+    },
+    {
+      "id": 1789205682642,
+      "created_at": "2026-09-12T09:34:42.603Z",
+      "key": "linkedin_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205683117,
+      "created_at": "2026-09-12T09:34:42.604Z",
+      "key": "facebook_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205683054,
+      "created_at": "2026-09-12T09:34:42.604Z",
+      "key": "instagram_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205683432,
+      "created_at": "2026-09-12T09:34:42.604Z",
+      "key": "youtube_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205682926,
+      "created_at": "2026-09-12T09:34:42.605Z",
+      "key": "whatsapp_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205683208,
+      "created_at": "2026-09-12T09:34:42.605Z",
+      "key": "site_logo",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789205683555,
+      "created_at": "2026-09-12T09:34:42.605Z",
+      "key": "about_image",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789205983798,
+      "created_at": "2026-09-12T09:39:43.434Z",
+      "key": "hero_headline",
+      "value": "Turn Ad Spend Into Measurable Business Growth"
+    },
+    {
+      "id": 1789205983978,
+      "created_at": "2026-09-12T09:39:43.435Z",
+      "key": "hero_description",
+      "value": "I help businesses grow with high-performance Meta Ads, accurate conversion tracking, retargeting and data-driven optimization."
+    },
+    {
+      "id": 1789205984345,
+      "created_at": "2026-09-12T09:39:43.436Z",
+      "key": "about_text",
+      "value": "I am a data-driven Digital Marketer specializing in Meta Ads, Conversion Tracking, and creating scalable advertising strategies."
+    },
+    {
+      "id": 1789205984365,
+      "created_at": "2026-09-12T09:39:43.436Z",
+      "key": "contact_email",
+      "value": "mehedihasanofficial.mkt@gmail.com"
+    },
+    {
+      "id": 1789205984265,
+      "created_at": "2026-09-12T09:39:43.437Z",
+      "key": "contact_phone",
+      "value": "+8801895424172"
+    },
+    {
+      "id": 1789205983967,
+      "created_at": "2026-09-12T09:39:43.437Z",
+      "key": "linkedin_url",
+      "value": "https://www.linkedin.com/in/mehedihasanofficial-mkt/"
+    },
+    {
+      "id": 1789205984114,
+      "created_at": "2026-09-12T09:39:43.438Z",
+      "key": "facebook_url",
+      "value": "https://www.facebook.com/mehedihasanofficial.mkt/"
+    },
+    {
+      "id": 1789205983594,
+      "created_at": "2026-09-12T09:39:43.438Z",
+      "key": "instagram_url",
+      "value": "https://www.instagram.com/mehedihasanofficial.mkt/"
+    },
+    {
+      "id": 1789205983514,
+      "created_at": "2026-09-12T09:39:43.438Z",
+      "key": "youtube_url",
+      "value": "https://www.youtube.com/@mehedihasanofficial-mkt"
+    },
+    {
+      "id": 1789205984297,
+      "created_at": "2026-09-12T09:39:43.439Z",
+      "key": "whatsapp_url",
+      "value": "#"
+    },
+    {
+      "id": 1789205984242,
+      "created_at": "2026-09-12T09:39:43.439Z",
+      "key": "site_logo",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789205983691,
+      "created_at": "2026-09-12T09:39:43.440Z",
+      "key": "about_image",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789205984241,
+      "created_at": "2026-09-12T09:39:43.440Z",
+      "key": "site_name",
+      "value": "Mehedi Hasan"
+    },
+    {
+      "id": 1789206738596,
+      "created_at": "2026-09-12T09:52:18.510Z",
+      "key": "hero_headline",
+      "value": "Turn Ad Spend Into Measurable Business Growth"
+    },
+    {
+      "id": 1789206739362,
+      "created_at": "2026-09-12T09:52:18.511Z",
+      "key": "hero_description",
+      "value": "I help businesses grow with high-performance Meta Ads, accurate conversion tracking, retargeting and data-driven optimization."
+    },
+    {
+      "id": 1789206738535,
+      "created_at": "2026-09-12T09:52:18.512Z",
+      "key": "about_text",
+      "value": "I am a data-driven Digital Marketer specializing in Meta Ads, Conversion Tracking, and creating scalable advertising strategies."
+    },
+    {
+      "id": 1789206739395,
+      "created_at": "2026-09-12T09:52:18.513Z",
+      "key": "contact_email",
+      "value": "mehedihasanofficial.mkt@gmail.com"
+    },
+    {
+      "id": 1789206738618,
+      "created_at": "2026-09-12T09:52:18.514Z",
+      "key": "contact_phone",
+      "value": "+8801895424172"
+    },
+    {
+      "id": 1789206739510,
+      "created_at": "2026-09-12T09:52:18.515Z",
+      "key": "linkedin_url",
+      "value": "https://www.linkedin.com/in/mehedihasanofficial-mkt/"
+    },
+    {
+      "id": 1789206739319,
+      "created_at": "2026-09-12T09:52:18.516Z",
+      "key": "facebook_url",
+      "value": "https://www.facebook.com/mehedihasanofficial.mkt/"
+    },
+    {
+      "id": 1789206739123,
+      "created_at": "2026-09-12T09:52:18.516Z",
+      "key": "instagram_url",
+      "value": "https://www.instagram.com/mehedihasanofficial.mkt/"
+    },
+    {
+      "id": 1789206739455,
+      "created_at": "2026-09-12T09:52:18.517Z",
+      "key": "youtube_url",
+      "value": "https://www.youtube.com/@mehedihasanofficial-mkt"
+    },
+    {
+      "id": 1789206739372,
+      "created_at": "2026-09-12T09:52:18.517Z",
+      "key": "whatsapp_url",
+      "value": "#"
+    },
+    {
+      "id": 1789206738663,
+      "created_at": "2026-09-12T09:52:18.518Z",
+      "key": "site_logo",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789206739284,
+      "created_at": "2026-09-12T09:52:18.518Z",
+      "key": "about_image",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789206739097,
+      "created_at": "2026-09-12T09:52:18.519Z",
+      "key": "site_name",
+      "value": "Mehedi Hasan"
+    },
+    {
+      "id": 1789207003350,
+      "created_at": "2026-09-12T09:56:42.358Z",
+      "key": "hero_headline",
+      "value": "Turn Ad Spend Into Measurable Business Growth"
+    },
+    {
+      "id": 1789207002384,
+      "created_at": "2026-09-12T09:56:42.358Z",
+      "key": "hero_description",
+      "value": "I help businesses grow with high-performance Meta Ads, accurate conversion tracking, retargeting and data-driven optimization."
+    },
+    {
+      "id": 1789207003347,
+      "created_at": "2026-09-12T09:56:42.359Z",
+      "key": "about_text",
+      "value": "I am a data-driven Digital Marketer specializing in Meta Ads, Conversion Tracking, and creating scalable advertising strategies."
+    },
+    {
+      "id": 1789207003262,
+      "created_at": "2026-09-12T09:56:42.359Z",
+      "key": "contact_email",
+      "value": "mehedihasanofficial.mkt@gmail.com"
+    },
+    {
+      "id": 1789207002826,
+      "created_at": "2026-09-12T09:56:42.360Z",
+      "key": "contact_phone",
+      "value": "+8801895424172"
+    },
+    {
+      "id": 1789207002926,
+      "created_at": "2026-09-12T09:56:42.360Z",
+      "key": "linkedin_url",
+      "value": "https://www.linkedin.com/in/mehedihasanofficial-mkt/"
+    },
+    {
+      "id": 1789207002700,
+      "created_at": "2026-09-12T09:56:42.361Z",
+      "key": "facebook_url",
+      "value": "https://www.facebook.com/mehedihasanofficial.mkt/"
+    },
+    {
+      "id": 1789207003029,
+      "created_at": "2026-09-12T09:56:42.361Z",
+      "key": "instagram_url",
+      "value": "https://www.instagram.com/mehedihasanofficial.mkt/"
+    },
+    {
+      "id": 1789207002729,
+      "created_at": "2026-09-12T09:56:42.362Z",
+      "key": "youtube_url",
+      "value": "https://www.youtube.com/@mehedihasanofficial-mkt"
+    },
+    {
+      "id": 1789207002837,
+      "created_at": "2026-09-12T09:56:42.362Z",
+      "key": "whatsapp_url",
+      "value": "#"
+    },
+    {
+      "id": 1789207003115,
+      "created_at": "2026-09-12T09:56:42.363Z",
+      "key": "site_logo",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789207002835,
+      "created_at": "2026-09-12T09:56:42.363Z",
+      "key": "about_image",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789207003344,
+      "created_at": "2026-09-12T09:56:42.364Z",
+      "key": "site_name",
+      "value": "Mehedi Hasan"
+    },
+    {
+      "id": 1789207011283,
+      "created_at": "2026-09-12T09:56:51.231Z",
+      "key": "hero_headline",
+      "value": "Turn Ad Spend Into Measurable Business Growth"
+    },
+    {
+      "id": 1789207011584,
+      "created_at": "2026-09-12T09:56:51.232Z",
+      "key": "hero_description",
+      "value": "I help businesses grow with high-performance Meta Ads, accurate conversion tracking, retargeting and data-driven optimization."
+    },
+    {
+      "id": 1789207012106,
+      "created_at": "2026-09-12T09:56:51.232Z",
+      "key": "about_text",
+      "value": "I am a data-driven Digital Marketer specializing in Meta Ads, Conversion Tracking, and creating scalable advertising strategies."
+    },
+    {
+      "id": 1789207011434,
+      "created_at": "2026-09-12T09:56:51.233Z",
+      "key": "contact_email",
+      "value": "mehedihasanofficial.mkt@gmail.com"
+    },
+    {
+      "id": 1789207011812,
+      "created_at": "2026-09-12T09:56:51.233Z",
+      "key": "contact_phone",
+      "value": "+8801895424172"
+    },
+    {
+      "id": 1789207011351,
+      "created_at": "2026-09-12T09:56:51.233Z",
+      "key": "linkedin_url",
+      "value": "https://www.linkedin.com/in/mehedihasanofficial-mkt/"
+    },
+    {
+      "id": 1789207012001,
+      "created_at": "2026-09-12T09:56:51.234Z",
+      "key": "facebook_url",
+      "value": "https://www.facebook.com/mehedihasanofficial.mkt/"
+    },
+    {
+      "id": 1789207011531,
+      "created_at": "2026-09-12T09:56:51.234Z",
+      "key": "instagram_url",
+      "value": "https://www.instagram.com/mehedihasanofficial.mkt/"
+    },
+    {
+      "id": 1789207011733,
+      "created_at": "2026-09-12T09:56:51.234Z",
+      "key": "youtube_url",
+      "value": "https://www.youtube.com/@mehedihasanofficial-mkt"
+    },
+    {
+      "id": 1789207011462,
+      "created_at": "2026-09-12T09:56:51.235Z",
+      "key": "whatsapp_url",
+      "value": "#"
+    },
+    {
+      "id": 1789207011289,
+      "created_at": "2026-09-12T09:56:51.235Z",
+      "key": "site_logo",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789207011510,
+      "created_at": "2026-09-12T09:56:51.236Z",
+      "key": "about_image",
+      "value": "/assets/my-pic-website.png"
+    },
+    {
+      "id": 1789207011302,
+      "created_at": "2026-09-12T09:56:51.236Z",
+      "key": "site_name",
+      "value": "Mehedi Hasan"
+    }
+  ],
+  "faqs": [
+    {
+      "id": 1789205549254,
+      "question": "What services do you offer?",
+      "answer": "I specialize in Meta Ads Management, Conversion Tracking, and Retargeting campaigns tailored to help businesses grow and maximize ROI.",
+      "display_order": 1,
+      "published": 1,
+      "created_at": "2026-09-12T09:32:29.178Z"
+    },
+    {
+      "id": 1789205549866,
+      "question": "Do you offer guarantees on ad performance?",
+      "answer": "While I cannot guarantee specific ROAS or conversions due to market variables, I do guarantee data-driven strategies, rigorous testing, and continuous optimization to achieve the best possible results.",
+      "display_order": 2,
+      "published": 1,
+      "created_at": "2026-09-12T09:32:29.178Z"
+    },
+    {
+      "id": 1789205549260,
+      "question": "What is your minimum ad spend requirement?",
+      "answer": "I typically work with clients who have a minimum monthly ad budget of $500, though this can vary based on your specific goals and industry.",
+      "display_order": 3,
+      "published": 1,
+      "created_at": "2026-09-12T09:32:29.178Z"
+    },
+    {
+      "id": 1789205549751,
+      "question": "How do you track conversions?",
+      "answer": "I implement both browser-side (Meta Pixel) and server-side tracking (Conversion API) to ensure accurate data collection, better attribution, and improved ad optimization.",
+      "display_order": 4,
+      "published": 1,
+      "created_at": "2026-09-12T09:32:29.178Z"
+    }
+  ]
+}
