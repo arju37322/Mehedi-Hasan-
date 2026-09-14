@@ -83,7 +83,7 @@ export async function apiFetch(url: string, options: RequestInit = {}) {
       
       if (method === 'POST' && !docId) {
         const newRef = await addDoc(collection(db, collName), { ...body, created_at: Date.now() });
-        return jsonResponse({ id: newRef.id, ...body });
+        return jsonResponse({ success: true, id: newRef.id, ...body });
       }
       
       if (method === 'PUT' && docId) {
